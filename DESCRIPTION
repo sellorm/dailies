@@ -1,0 +1,13 @@
+Package: dailies
+Title: Tools for working with the RStudio daily builds
+Version: 0.0.1
+Authors@R: person("Mark", "Sellors", email = "dailies@5vcc.com", role = c("aut", "cre"))
+Description: Tools to download and in some cases also install, the RStudio Daily builds. Use with caution.
+Depends: R (>= 3.5.0)
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.0.1
+Imports: 
+    rvest,
+    xml2
