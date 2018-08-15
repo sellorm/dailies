@@ -25,16 +25,18 @@
 #'
 #' @export
 get_url <- function(os, type = "server"){
-  server_oses <- list(ubuntu = "https://dailies.rstudio.com/rstudioserver/oss/ubuntu/x86_64/",
-                      debian = "https://dailies.rstudio.com/rstudioserver/oss/debian9/x86_64/",
-                      redhat = "https://dailies.rstudio.com/rstudioserver/oss/redhat6/x86_64/",
-                      suse = "https://dailies.rstudio.com/rstudioserver/oss/suse/x86_64/"
-                      )
-  desktop_oses <- list(windows = "https://dailies.rstudio.com/rstudio/oss/windows/",
-                       macos = "https://dailies.rstudio.com/rstudio/oss/mac/",
-                       ubuntu = "https://dailies.rstudio.com/rstudio/oss/xenial/x86_64/",
-                       fedora = "https://dailies.rstudio.com/rstudio/oss/fedora/x86_64/"
-                       )
+  server_oses <- list(
+    ubuntu = "https://dailies.rstudio.com/rstudioserver/oss/ubuntu/x86_64/",
+    debian = "https://dailies.rstudio.com/rstudioserver/oss/debian9/x86_64/",
+    redhat = "https://dailies.rstudio.com/rstudioserver/oss/redhat6/x86_64/",
+    suse = "https://dailies.rstudio.com/rstudioserver/oss/suse/x86_64/"
+    )
+  desktop_oses <- list(
+    windows = "https://dailies.rstudio.com/rstudio/oss/windows/",
+    macos = "https://dailies.rstudio.com/rstudio/oss/mac/",
+    ubuntu = "https://dailies.rstudio.com/rstudio/oss/xenial/x86_64/",
+    fedora = "https://dailies.rstudio.com/rstudio/oss/fedora/x86_64/"
+    )
   url <- switch(type,
     server = server_oses[[os]],
     desktop = desktop_oses[[os]],
@@ -43,5 +45,5 @@ get_url <- function(os, type = "server"){
   if (is.null(url)){
     stop("bad combination of \"os\" and \"type\"")
   }
-  return(url)
+  url
 }

@@ -9,5 +9,5 @@
 #'
 #' @export
 latest <- function(os, type = "server"){
-  return(list_downloads(os, type)[1])
+  list_downloads(os, type)[1]
 }

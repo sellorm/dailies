@@ -15,5 +15,5 @@ list_downloads <- function(os, type = "server"){
   latest_downloads <- dailies_html %>%
     rvest::html_nodes(".filename a") %>%
     rvest::html_attr("href")
-  return(latest_downloads)
+  latest_downloads
 }
