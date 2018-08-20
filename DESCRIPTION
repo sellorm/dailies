@@ -2,7 +2,9 @@ Package: dailies
 Title: Tools for working with the RStudio daily builds
 Version: 0.0.1
 Authors@R: person("Mark", "Sellors", email = "github@5vcc.com", role = c("aut", "cre"))
-Description: Tools to get URLs for the RStudio Daily builds. Use with caution.
+Description: Tools to get URLs for the RStudio Daily builds.
+URL: https://dailies.sellorm.com
+BugReports: https://github.com/sellorm/dailies/issues
 Depends: R (>= 3.0.0)
 License: MIT + file LICENSE
 Encoding: UTF-8
