@@ -21,7 +21,7 @@ dailies::latest("ubuntu", type = "desktop")
 
 Download the latest build in your default web browser:
 
-```
+``` r
 browseURL(dailies::latest("macos", type = "desktop"))
 ```
 
