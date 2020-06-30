@@ -15,6 +15,9 @@ build: ## Build the package
 archive: ## move the package outputs to the 'output' directory
 	bash projctl archive
 
+build_site: ## build the pkgdown site for the package
+	R -e "pkgdown::build_site()"
+
 clean:
 	-rm -r output
 
