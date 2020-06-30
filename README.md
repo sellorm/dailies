@@ -19,6 +19,12 @@ The most common thing you might want to do is get the download URL for the lates
 dailies::latest("ubuntu", type = "desktop")
 ```
 
+Download the latest build in your default web browser:
+
+```
+browseURL(dailies::latest("macos", type = "desktop"))
+```
+
 Open the RStudio Daily build website:
 
 ``` r
