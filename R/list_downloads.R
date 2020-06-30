@@ -9,7 +9,7 @@
 #'
 #' @importFrom rvest %>%
 #' @export
-list_downloads <- function(os, type = "server"){
+list_downloads <- function(os, type = "server") {
   target_url <- get_url(os, type)
   dailies_html <- xml2::read_html(target_url)
   latest_downloads <- dailies_html %>%

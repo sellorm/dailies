@@ -24,7 +24,7 @@
 #' @return The URL of the dailies page
 #'
 #' @export
-get_url <- function(os, type = "server"){
+get_url <- function(os, type = "server") {
   server_oses <- list(
     ubuntu = "https://dailies.rstudio.com/rstudioserver/oss/ubuntu/x86_64/",
     debian = "https://dailies.rstudio.com/rstudioserver/oss/debian9/x86_64/",
@@ -42,7 +42,7 @@ get_url <- function(os, type = "server"){
     desktop = desktop_oses[[os]],
     stop("\"type\" needs to be on of \"server\" or \"desktop\"")
     )
-  if (is.null(url)){
+  if (is.null(url)) {
     stop("bad combination of \"os\" and \"type\"")
   }
   url

@@ -1,6 +1,6 @@
 #' Opens the RStudio Dailies website
 #'
 #' @export
-website <- function(){
+website <- function() {
   utils::browseURL("https://dailies.rstudio.com")
 }

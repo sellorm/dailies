@@ -8,6 +8,6 @@
 #' @return The most recent download URL
 #'
 #' @export
-latest <- function(os, type = "server"){
+latest <- function(os, type = "server") {
   list_downloads(os, type)[1]
 }

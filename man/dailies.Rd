@@ -3,7 +3,6 @@
 \docType{package}
 \name{dailies}
 \alias{dailies}
-\alias{dailies-package}
 \title{dailies: A package for working with the RStudio daily build pages.}
 \description{
 RStudio offer their daily builds of the IDE to the community so that we can
