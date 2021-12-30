@@ -28,5 +28,5 @@ browseURL(dailies::latest("macos", type = "desktop"))
 Open the RStudio Daily build website:
 
 ``` r
-dailies::website()
+dailies::browse_website()
 ```

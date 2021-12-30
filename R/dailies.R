@@ -12,10 +12,9 @@
 #' @section Important Note: Some functions request data from the RStudio
 #'   website. Please be respectful in your usage of these functions. The dailies
 #'   site is offered as a service to the community and we should not repay that
-#'   kindness by hammering the site.\cr The author of this package is not
-#'   affiliated with RStudio and as such, the package is very much "unofficial".
+#'   kindness by hammering the site.\cr This package is very much "unofficial".
 #'
-#' @section dailies functions: The most useful function is probably
+#' @section dailies functions: The most useful function is
 #'   \code{latest()} which returns the url for the latest version.
 #'
 #' @docType package

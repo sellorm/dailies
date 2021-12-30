@@ -5,3 +5,4 @@ projctl
 Makefile
 Jenkinsfile
 docs
+NOTES.md

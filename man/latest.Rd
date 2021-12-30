@@ -4,16 +4,17 @@
 \alias{latest}
 \title{latest daily download URL}
 \usage{
-latest(os, type = "server")
+latest(os, type = "desktop")
 }
 \arguments{
 \item{os}{The operating system}
 
-\item{type}{One of "server" (default) or "desktop"}
+\item{type}{One of "desktop" (default) or "server"}
 }
 \value{
-The most recent download URL
+The URL of the latest daily build
 }
 \description{
 Returns the most recent daily version download URL for a given os and type
+The options available are derived directly from the API.
 }
